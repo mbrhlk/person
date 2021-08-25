@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+li {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1, h2, h3 {
+  font-weight: 300;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-flow: column;
+  background: #F0F0F0;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.app header {
+  display: inline-block;
+  background:	#DCDCDC;
+  padding: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app header img {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+
+.app header h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.personality {
+  --auto-grid-min-size: 20rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+  padding: 12px;
+}
+
+.facet {
+  background: #FFFFFF;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.facet header {
+  width: 100%;
+  padding: 30px 12px;
+  box-sizing: border-box;
+}
+
+.facet h2 {
+  padding-bottom: 12px;
+}
+
+.trait {
+  padding: 14px 0;
+}
+
+.rc-slider-track {
+  background: linear-gradient(to right, #12c2e9 , #c471ed, #f64f59);
 }
